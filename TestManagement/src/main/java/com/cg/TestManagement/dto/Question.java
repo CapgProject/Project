@@ -4,7 +4,12 @@ import java.math.BigInteger;
 import java.util.Arrays;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
@@ -20,6 +25,10 @@ public class Question {
 	private Double marksScored;
 	private BigInteger testId;
 	private Boolean isDeleted;
+	
+	@ManyToOne
+	@JoinColumn(name = "test_id")
+	private OnlineTest onlinetest;
 
 	public Question() {
 		super();

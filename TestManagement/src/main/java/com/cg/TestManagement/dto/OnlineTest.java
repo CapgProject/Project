@@ -5,8 +5,13 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
@@ -16,6 +21,8 @@ public class OnlineTest {
 	private BigInteger testId;
 	private String testName;
 	private LocalTime testDuration;
+	
+	@OneToMany(mappedBy = "onlinetest", cascade=CascadeType.ALL)
 	private Set<Question> testQuestions;
 	private Double testTotalMarks;
 	private Double testMarksScored;

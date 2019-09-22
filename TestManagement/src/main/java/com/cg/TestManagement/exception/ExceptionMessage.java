@@ -17,6 +17,8 @@ public class ExceptionMessage {
 	public static final String INVALIDINPUTMESSAGE = "Invalid Input Type";
 	public static final String DATABASEMESSAGE = "Database is full! Contact your database manager for further queries!";
 	public static final String ADMINMESSAGE = "Admin cannot be assigned a test";
+	public static final String TESTNOTFOUNDMESSAGE = "Test is not present";
+	
 	private ExceptionMessage() {
 		super();
 	}

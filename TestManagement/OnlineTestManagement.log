@@ -64,3 +64,335 @@
 2019-09-22-main-INFO -DbUtil.class:connection Obtained! : com.mysql.cj.jdbc.ConnectionImpl@28feb3fa
 2019-09-22-main-INFO -OnlineTestDaoImpl.class:Connection obtained
 2019-09-22-main-ERROR-DbUtil.class:java.util.InputMismatchException
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-22-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-22-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-22-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-22-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-22-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-22-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-22-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-22-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-22-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question drop foreign key FK_rox73wc9m1nkopm1nmgr70713
+2019-09-22-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Table 'project.question' doesn't exist
+2019-09-22-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user drop foreign key FK_dgxk1c4h0s45vu9wnqy5ogt5s
+2019-09-22-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Table 'project.user' doesn't exist
+2019-09-22-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-22-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-22-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-22-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-22-main-ERROR-DbUtil.class:com.cg.TestManagement.exception.UserException: Database is full! Contact your database manager for further queries!
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-22-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-22-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-22-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-22-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-22-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-22-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-22-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-22-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-22-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-22-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-22-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-22-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-22-main-ERROR-DbUtil.class:com.cg.TestManagement.exception.UserException: The user does not exist
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-22-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-22-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-22-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-22-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-22-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-22-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-22-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-22-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-22-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-22-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-22-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-22-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-22-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-22-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-22-main-ERROR-DbUtil.class:com.cg.TestManagement.exception.UserException: The user does not exist
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-23-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-23-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-23-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question drop foreign key FK_rox73wc9m1nkopm1nmgr70713
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\question' to '.\project\#sql2-69c-6' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user drop foreign key FK_dgxk1c4h0s45vu9wnqy5ogt5s
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\user' to '.\project\#sql2-69c-6' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: create table test (testId decimal(19,2) not null auto_increment, endTime tinyblob, isDeleted bit, isTestAssigned bit, startTime tinyblob, testDuration tinyblob, testMarksScored double precision, testName varchar(255), testTotalMarks double precision, primary key (testId))
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Incorrect column specifier for column 'testId'
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question add constraint FK_rox73wc9m1nkopm1nmgr70713 foreign key (test_id) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Can't create table 'project.#sql-69c_6' (errno: 150)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user add constraint FK_dgxk1c4h0s45vu9wnqy5ogt5s foreign key (userTest_testId) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Can't create table 'project.#sql-69c_6' (errno: 150)
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-23-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-23-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-23-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.spi.SqlExceptionHelper:SQL Error: 1146, SQLState: 42S02
+2019-09-23-main-ERROR-org.hibernate.engine.jdbc.spi.SqlExceptionHelper:Table 'project.test' doesn't exist
+2019-09-23-main-INFO -org.hibernate.event.internal.DefaultLoadEventListener:HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question drop foreign key FK_rox73wc9m1nkopm1nmgr70713
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\question' to '.\project\#sql2-69c-8' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user drop foreign key FK_dgxk1c4h0s45vu9wnqy5ogt5s
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\user' to '.\project\#sql2-69c-8' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: create table test (testId decimal(19,2) not null auto_increment, endTime tinyblob, isDeleted bit, isTestAssigned bit, startTime tinyblob, testDuration tinyblob, testMarksScored double precision, testName varchar(255), testTotalMarks double precision, primary key (testId))
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Incorrect column specifier for column 'testId'
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question add constraint FK_rox73wc9m1nkopm1nmgr70713 foreign key (test_id) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Can't create table 'project.#sql-69c_8' (errno: 150)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user add constraint FK_dgxk1c4h0s45vu9wnqy5ogt5s foreign key (userTest_testId) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Can't create table 'project.#sql-69c_8' (errno: 150)
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-23-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-23-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-23-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.spi.SqlExceptionHelper:SQL Error: 1146, SQLState: 42S02
+2019-09-23-main-ERROR-org.hibernate.engine.jdbc.spi.SqlExceptionHelper:Table 'project.test' doesn't exist
+2019-09-23-main-INFO -org.hibernate.event.internal.DefaultLoadEventListener:HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question drop foreign key FK_rox73wc9m1nkopm1nmgr70713
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\question' to '.\project\#sql2-69c-a' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user drop foreign key FK_dgxk1c4h0s45vu9wnqy5ogt5s
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\user' to '.\project\#sql2-69c-a' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: create table test (testId decimal(19,2) not null auto_increment, endTime tinyblob, isDeleted bit, isTestAssigned bit, startTime tinyblob, testDuration tinyblob, testMarksScored double precision, testName varchar(255), testTotalMarks double precision, primary key (testId))
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Incorrect column specifier for column 'testId'
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question add constraint FK_rox73wc9m1nkopm1nmgr70713 foreign key (test_id) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Can't create table 'project.#sql-69c_a' (errno: 150)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user add constraint FK_dgxk1c4h0s45vu9wnqy5ogt5s foreign key (userTest_testId) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Can't create table 'project.#sql-69c_a' (errno: 150)
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-23-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-23-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-23-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.spi.SqlExceptionHelper:SQL Error: 1146, SQLState: 42S02
+2019-09-23-main-ERROR-org.hibernate.engine.jdbc.spi.SqlExceptionHelper:Table 'project.test' doesn't exist
+2019-09-23-main-INFO -org.hibernate.event.internal.DefaultLoadEventListener:HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question drop foreign key FK_rox73wc9m1nkopm1nmgr70713
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\question' to '.\project\#sql2-69c-c' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user drop foreign key FK_dgxk1c4h0s45vu9wnqy5ogt5s
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\user' to '.\project\#sql2-69c-c' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: create table test (testId decimal(19,2) not null auto_increment, endTime tinyblob, isDeleted bit, isTestAssigned bit, startTime tinyblob, testDuration tinyblob, testMarksScored double precision, testName varchar(255), testTotalMarks double precision, primary key (testId))
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Incorrect column specifier for column 'testId'
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question add constraint FK_rox73wc9m1nkopm1nmgr70713 foreign key (test_id) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Can't create table 'project.#sql-69c_c' (errno: 150)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user add constraint FK_dgxk1c4h0s45vu9wnqy5ogt5s foreign key (userTest_testId) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Can't create table 'project.#sql-69c_c' (errno: 150)
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-23-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-23-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-23-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question drop foreign key FK_rox73wc9m1nkopm1nmgr70713
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\question' to '.\project\#sql2-69c-f' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user drop foreign key FK_dgxk1c4h0s45vu9wnqy5ogt5s
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Error on rename of '.\project\user' to '.\project\#sql2-69c-f' (errno: 152)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: create table question (questionId decimal(19,2) not null auto_increment, chosenAnswer integer, isDeleted bit, marksScored double precision, questionAnswer integer, questionMarks double precision, questionOptions tinyblob, questionTitle varchar(255), testId decimal(19,2), test_id decimal(19,2), primary key (questionId))
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Incorrect column specifier for column 'questionId'
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: create table test (testId decimal(19,2) not null auto_increment, endTime tinyblob, isDeleted bit, isTestAssigned bit, startTime tinyblob, testDuration tinyblob, testMarksScored double precision, testName varchar(255), testTotalMarks double precision, primary key (testId))
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Incorrect column specifier for column 'testId'
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: create table user (userId decimal(19,2) not null auto_increment, isAdmin bit, isDeleted bit, userName varchar(255), userPassword varchar(255), userTest_testId decimal(19,2), primary key (userId))
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Incorrect column specifier for column 'userId'
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question add constraint FK_rox73wc9m1nkopm1nmgr70713 foreign key (test_id) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Table 'project.question' doesn't exist
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user add constraint FK_dgxk1c4h0s45vu9wnqy5ogt5s foreign key (userTest_testId) references test (testId)
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Table 'project.user' doesn't exist
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-23-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-23-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-23-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.spi.SqlExceptionHelper:SQL Error: 1146, SQLState: 42S02
+2019-09-23-main-ERROR-org.hibernate.engine.jdbc.spi.SqlExceptionHelper:Table 'project.user' doesn't exist
+2019-09-23-main-INFO -org.hibernate.event.internal.DefaultLoadEventListener:HHH000327: Error performing load command : org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-WARN -org.hibernate.ejb.HibernatePersistence:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2019-09-23-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [
+	name: OnlineTestManagement
+	...]
+2019-09-23-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {4.3.10.Final}
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000206: hibernate.properties not found
+2019-09-23-main-INFO -org.hibernate.cfg.Environment:HHH000021: Bytecode provider name : javassist
+2019-09-23-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-23-main-WARN -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000046: Connection properties: {user=root, password=****}
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000006: Autocommit mode: false
+2019-09-23-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-23-main-INFO -org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory:HHH000397: Using ASTQueryTranslatorFactory
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000227: Running hbm2ddl schema export
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table question drop foreign key FK_rox73wc9m1nkopm1nmgr70713
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Table 'project.question' doesn't exist
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:HHH000389: Unsuccessful: alter table user drop foreign key FK_dgxk1c4h0s45vu9wnqy5ogt5s
+2019-09-23-main-ERROR-org.hibernate.tool.hbm2ddl.SchemaExport:Table 'project.user' doesn't exist
+2019-09-23-main-INFO -org.hibernate.tool.hbm2ddl.SchemaExport:HHH000230: Schema export complete
+2019-09-23-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-23-main-ERROR-DbUtil.class:sorry!!! Something went wrong with the connectionjava.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+2019-09-23-main-INFO -OnlineTestDaoImpl.class:Connection obtained
