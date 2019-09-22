@@ -2,12 +2,22 @@ package com.cg.TestManagement.dto;
 
 import java.math.BigInteger;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user")
 public class User {
+	@Id
 	private BigInteger userId;
 	private String userName;
 	private String userPassword;
+	@OneToOne
 	private OnlineTest userTest;
 	private Boolean isAdmin;
+	private Boolean isDeleted;
 
 	public User() {
 		super();
@@ -20,6 +30,7 @@ public class User {
 		this.userPassword = userPassword;
 		this.userTest = userTest;
 		this.isAdmin = isAdmin;
+		this.isDeleted = false;
 	}
 
 	public BigInteger getUserId() {
@@ -60,6 +71,15 @@ public class User {
 
 	public void setIsAdmin(Boolean isAdmin) {
 		this.isAdmin = isAdmin;
+	}
+	
+
+	public Boolean getIsDeleted() {
+		return isDeleted;
+	}
+
+	public void setIsDeleted(Boolean isDeleted) {
+		this.isDeleted = isDeleted;
 	}
 
 	@Override

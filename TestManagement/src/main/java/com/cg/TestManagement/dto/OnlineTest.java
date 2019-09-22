@@ -5,7 +5,14 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "test")
 public class OnlineTest {
+	@Id
 	private BigInteger testId;
 	private String testName;
 	private LocalTime testDuration;
@@ -15,6 +22,7 @@ public class OnlineTest {
 	private LocalDateTime startTime;
 	private LocalDateTime endTime;
 	private Boolean isTestAssigned;
+	private Boolean isDeleted;
 
 	public OnlineTest() {
 		super();
@@ -32,6 +40,7 @@ public class OnlineTest {
 		this.startTime = startTime;
 		this.endTime = endTime;
 		this.isTestAssigned = false;
+		this.isDeleted = false;
 	}
 
 	public BigInteger getTestId() {
@@ -104,6 +113,14 @@ public class OnlineTest {
 
 	public void setIsTestAssigned(Boolean isTestAssigned) {
 		this.isTestAssigned = isTestAssigned;
+	}
+	
+	public Boolean getIsdeleted() {
+		return isDeleted;
+	}
+
+	public void setIsdeleted(Boolean isDeleted) {
+		this.isDeleted = isDeleted;
 	}
 
 	@Override

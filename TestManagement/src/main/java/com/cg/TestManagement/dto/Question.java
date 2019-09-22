@@ -3,8 +3,14 @@ package com.cg.TestManagement.dto;
 import java.math.BigInteger;
 import java.util.Arrays;
 
-public class Question {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "question")
+public class Question {
+	@Id
 	private BigInteger questionId;
 	private String[] questionOptions;
 	private String questionTitle;
@@ -13,6 +19,7 @@ public class Question {
 	private Integer chosenAnswer;
 	private Double marksScored;
 	private BigInteger testId;
+	private Boolean isDeleted;
 
 	public Question() {
 		super();
@@ -29,6 +36,7 @@ public class Question {
 		this.chosenAnswer = -1;
 		this.marksScored = marksScored;
 		this.testId = testId;
+		this.isDeleted = false;
 	}
 
 	public BigInteger getQuestionId() {
@@ -93,6 +101,16 @@ public class Question {
 
 	public void setTestId(BigInteger testId) {
 		this.testId = testId;
+	}
+	
+	
+
+	public Boolean getIsDeleted() {
+		return isDeleted;
+	}
+
+	public void setIsDeleted(Boolean isDeleted) {
+		this.isDeleted = isDeleted;
 	}
 
 	@Override

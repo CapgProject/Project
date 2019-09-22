@@ -60,3 +60,7 @@
 2019-09-17-main-ERROR-DbUtil.class:com.cg.TestManagement.exception.UserException: Only Alphabets are allowed and the first character should be capitalized
 2019-09-17-main-ERROR-DbUtil.class:com.cg.TestManagement.exception.UserException: UserPassword should contain at least one upper case character, one lower case character, one numeric character, one special character and length should be at least eight characters
 2019-09-17-main-ERROR-DbUtil.class:com.cg.TestManagement.exception.UserException: The test is already assigned
+2019-09-22-main-INFO -DbUtil.class:Property File loaded : 
+2019-09-22-main-INFO -DbUtil.class:connection Obtained! : com.mysql.cj.jdbc.ConnectionImpl@28feb3fa
+2019-09-22-main-INFO -OnlineTestDaoImpl.class:Connection obtained
+2019-09-22-main-ERROR-DbUtil.class:java.util.InputMismatchException
