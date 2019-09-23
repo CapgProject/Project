@@ -1,5 +1,6 @@
 package com.cg.TestManagement.dao;
 
+import java.util.List;
 import java.util.Properties;
 import java.util.Set;
 
@@ -7,6 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -67,7 +69,6 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 	@Override
 	public OnlineTest searchTest(Long testId) throws UserException {
 		EntityTransaction transaction = entitymanager.getTransaction();
-		transaction.begin();
 		OnlineTest test = entitymanager.find(OnlineTest.class, testId);
 		if(test != null) {
 			return test;
@@ -83,7 +84,11 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 		transaction.begin();
 		OnlineTest test = entitymanager.find(OnlineTest.class, testId);
 		if(test != null) {
-			test.setIsdeleted(true);;
+			test.setIsdeleted(true);
+			Set<Question> question = test.getTestQuestions();
+			question.forEach(quest->{
+				quest.setOnlinetest(null);
+			});
 			transaction.commit();
 			return test;
 		}
@@ -119,8 +124,11 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 	@Override
 	public Question saveQuestion(Question question) throws UserException {
 		EntityTransaction transaction = entitymanager.getTransaction();
+		//Test test = entitymanager.find(OnlineTest.class, testId);
 		transaction.begin();
+		OnlineTest test = entitymanager.find(OnlineTest.class, question.getOnlinetest().getTestId());
 		entitymanager.persist(question);
+		test.getTestQuestions().add(question);
 		transaction.commit();
 		return question;
 	}
@@ -128,7 +136,6 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 	@Override
 	public Question searchQuestion(Long questId) throws UserException {
 		EntityTransaction transaction = entitymanager.getTransaction();
-		transaction.begin();
 		Question question = entitymanager.find(Question.class, questId);
 		if(question != null) {
 			return question;
@@ -145,6 +152,10 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 		Question question = entitymanager.find(Question.class, questId);
 		if(question != null) {
 			question.setIsDeleted(true);
+			OnlineTest onlineTest = entitymanager.find(OnlineTest.class, question.getOnlinetest().getTestId());
+			if (onlineTest != null){
+				onlineTest.getTestQuestions().remove(question);
+			}
 			transaction.commit();
 			return question;
 		}
@@ -230,6 +241,28 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 		else {
 			throw new UserException(ExceptionMessage.USERMESSAGE);
 		}
+	}
+
+	@Override
+	public List<User> getUsers() {
+		// TODO Auto-generated method stub
+		EntityTransaction transaction = entitymanager.getTransaction();
+		transaction.begin();
+		Query query = entitymanager.createQuery("FROM User WHERE isAdmin=0");
+		List<User> userList = query.getResultList();
+		transaction.commit();
+		return userList;
+	}
+
+	@Override
+	public List<OnlineTest> getTests() {
+		// TODO Auto-generated method stub
+		EntityTransaction transaction = entitymanager.getTransaction();
+		transaction.begin();
+		Query query = entitymanager.createQuery("FROM OnlineTest WHERE isDeleted IS NULL");
+		List<OnlineTest> testList = query.getResultList();
+		transaction.commit();
+		return testList;
 	}
 
 }

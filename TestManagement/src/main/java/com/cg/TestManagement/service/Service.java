@@ -2,6 +2,7 @@ package com.cg.TestManagement.service;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.List;
 
 import com.cg.TestManagement.dto.Question;
 import com.cg.TestManagement.dto.OnlineTest;
@@ -24,6 +25,8 @@ public interface Service {
 	public Double calculateTotalMarks(OnlineTest onlineTest) throws UserException;
 	public OnlineTest searchTest(Long testId) throws UserException;
 	public User searchUser(Long userId) throws UserException;
+	public List<User> getUsers();
+	public List<OnlineTest> getTests();
 	public void validateUserId(Long id) throws UserException;
 	public void validateTestId(Long id) throws UserException;
 	public void validateQuestionId(Long id) throws UserException;

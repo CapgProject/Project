@@ -91,12 +91,14 @@ public class Application {
 	public static void displayAdminOptions(int adminChoice) {
 		do {
 			System.out.println(LINE);
-			System.out.println(CHOICEMESSAGE);
+			System.out.println("Enter choice between 1 and 6 to perform available actions:");
 			System.out.println(LINE);
 			System.out.println("1.Perform Actions on Test");
 			System.out.println("2.Perform Actions on Question");
 			System.out.println("3.Assign Test to a User");
-			System.out.println(GOBACKMESSAGE);
+			System.out.println("4.Get List of Users");
+			System.out.println("5.Get List of Tests");
+			System.out.println("6.Go Back");
 			System.out.println(LINE);
 			try {
 				adminChoice = scanner.nextInt();
@@ -113,6 +115,21 @@ public class Application {
 					assignTestToUser();
 					break;
 				case 4:
+					try {
+						listAllUsers();
+					} catch (UserException e) {
+						System.out.println(e.getMessage());
+						scanner.nextLine();
+					}
+					break;
+				case 5:
+					try {
+						listAllTests();
+					} catch (UserException e) {
+						System.out.println(e.getMessage());
+					}
+					break;
+				case 6:
 					break;
 				default:
 					System.out.println(INVALIDENTRYMESSAGE);
@@ -641,6 +658,30 @@ public class Application {
 			catchBlock(e);
 		}
 
+	}
+	
+	public static void listAllUsers() throws UserException {
+		List<User> userList = service.getUsers();
+		if(userList == null) {
+			throw new UserException(ExceptionMessage.NOUSERMESSAGE);
+		}
+		else {
+			userList.forEach(user->{
+				System.out.println(user.getUserId()+" : "+user.getUserName());
+			});
+		}
+	}
+	
+	public static void listAllTests() throws UserException {
+		List<OnlineTest> testList = service.getTests();
+		if(testList == null) {
+			throw new UserException(ExceptionMessage.NOTESTMESSAGE);
+		}
+		else {
+			testList.forEach(test->{
+				System.out.println(test.getTestId()+" : "+test.getTestName());
+			});
+		}
 	}
 
 	private static OnlineTest inputTest() throws UserException, InputMismatchException {

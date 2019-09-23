@@ -1,4 +1,6 @@
 package com.cg.TestManagement.dao;
+import java.util.List;
+
 import com.cg.TestManagement.dto.OnlineTest;
 import com.cg.TestManagement.dto.Question;
 import com.cg.TestManagement.dto.User;
@@ -18,7 +20,7 @@ public interface OnlineTestDao {
 	public User saveUser(User user) throws UserException;	
 	public User removeUser(Long userId) throws UserException;
 	public User updateUser(User user) throws UserException;
-	OnlineTest updateTest(OnlineTest test) throws UserException;
-	
-	
+	public OnlineTest updateTest(OnlineTest test) throws UserException;
+	public List<User> getUsers();
+	public List<OnlineTest> getTests();
 }

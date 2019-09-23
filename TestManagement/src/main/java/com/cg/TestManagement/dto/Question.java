@@ -29,6 +29,14 @@ public class Question {
 	@JoinColumn(name = "test_id")
 	private OnlineTest onlinetest;
 
+	public OnlineTest getOnlinetest() {
+		return onlinetest;
+	}
+
+	public void setOnlinetest(OnlineTest onlinetest) {
+		this.onlinetest = onlinetest;
+	}
+
 	public Question() {
 		super();
 	}

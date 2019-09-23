@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import com.cg.TestManagement.dao.OnlineTestDao;
@@ -118,6 +119,7 @@ public class ServiceImpl implements Service {
 		if (temp != null) {
 			question.setChosenAnswer(-1);
 			question.setMarksScored(0.0);
+			question.setOnlinetest(temp);
 			temp.setTestTotalMarks(temp.getTestTotalMarks() + question.getQuestionMarks());
 			onlineTestDao.saveQuestion(question);
 			onlineTestDao.updateTest(temp);
@@ -278,6 +280,18 @@ public class ServiceImpl implements Service {
 			throw new UserException(ExceptionMessage.USERMESSAGE);
 		}
 		return returnedUser;
+	}
+
+	@Override
+	public List<User> getUsers() {
+		// TODO Auto-generated method stub
+		return onlineTestDao.getUsers();
+	}
+
+	@Override
+	public List<OnlineTest> getTests() {
+		// TODO Auto-generated method stub
+		return onlineTestDao.getTests();
 	}
 
 }
