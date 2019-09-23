@@ -1,6 +1,5 @@
 package com.cg.TestManagement.dto;
 
-import java.math.BigInteger;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Set;
@@ -11,14 +10,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "test")
 public class OnlineTest {
 	@Id
-	private BigInteger testId;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long testId;
 	private String testName;
 	private LocalTime testDuration;
 	
@@ -50,11 +49,11 @@ public class OnlineTest {
 		this.isDeleted = false;
 	}
 
-	public BigInteger getTestId() {
+	public Long getTestId() {
 		return testId;
 	}
 
-	public void setTestId(BigInteger testId) {
+	public void setTestId(Long testId) {
 		this.testId = testId;
 	}
 

@@ -9,23 +9,22 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "question")
 public class Question {
 	@Id
-	private BigInteger questionId;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long questionId;
 	private String[] questionOptions;
 	private String questionTitle;
 	private Integer questionAnswer;
 	private Double questionMarks;
 	private Integer chosenAnswer;
 	private Double marksScored;
-	private BigInteger testId;
 	private Boolean isDeleted;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "test_id")
 	private OnlineTest onlinetest;
@@ -34,7 +33,7 @@ public class Question {
 		super();
 	}
 
-	public Question(BigInteger questionId, String[] questionOptions, String questionTitle, Integer questionAnswer,
+	public Question(Long questionId, String[] questionOptions, String questionTitle, Integer questionAnswer,
 			Double questionMarks, Double marksScored, BigInteger testId) {
 		super();
 		this.questionId = questionId;
@@ -44,15 +43,14 @@ public class Question {
 		this.questionMarks = questionMarks;
 		this.chosenAnswer = -1;
 		this.marksScored = marksScored;
-		this.testId = testId;
 		this.isDeleted = false;
 	}
 
-	public BigInteger getQuestionId() {
+	public Long getQuestionId() {
 		return questionId;
 	}
 
-	public void setQuestionId(BigInteger questionId) {
+	public void setQuestionId(Long questionId) {
 		this.questionId = questionId;
 	}
 
@@ -104,16 +102,6 @@ public class Question {
 		this.marksScored = marksScored;
 	}
 
-	public BigInteger getTestId() {
-		return testId;
-	}
-
-	public void setTestId(BigInteger testId) {
-		this.testId = testId;
-	}
-	
-	
-
 	public Boolean getIsDeleted() {
 		return isDeleted;
 	}
@@ -126,8 +114,7 @@ public class Question {
 	public String toString() {
 		return "Question [questionId=" + questionId + ", questionOptions=" + Arrays.toString(questionOptions)
 				+ ", questionTitle=" + questionTitle + ", questionAnswer=" + questionAnswer + ", questionMarks="
-				+ questionMarks + ", chosenAnswer=" + chosenAnswer + ", marksScored=" + marksScored + ", testId="
-				+ testId + "]";
+				+ questionMarks + ", chosenAnswer=" + chosenAnswer + ", marksScored=" + marksScored + ", testId=" + "]";
 	}
 
 	@Override
@@ -137,10 +124,9 @@ public class Question {
 
 	@Override
 	public boolean equals(Object obj) {
-		if(obj != null) {
+		if (obj != null) {
 			return this.hashCode() == obj.hashCode();
-		}
-		else {
+		} else {
 			return false;
 		}
 	}

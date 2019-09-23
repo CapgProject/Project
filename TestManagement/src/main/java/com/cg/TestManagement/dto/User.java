@@ -1,20 +1,18 @@
 package com.cg.TestManagement.dto;
 
-import java.math.BigInteger;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "user")
 public class User {
 	@Id
-	private BigInteger userId;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long userId;
 	private String userName;
 	private String userPassword;
 	@OneToOne
@@ -26,7 +24,7 @@ public class User {
 		super();
 	}
 
-	public User(BigInteger userId, String userName, String userPassword, OnlineTest userTest, Boolean isAdmin) {
+	public User(Long userId, String userName, String userPassword, OnlineTest userTest, Boolean isAdmin) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
@@ -36,11 +34,11 @@ public class User {
 		this.isDeleted = false;
 	}
 
-	public BigInteger getUserId() {
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(BigInteger userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 

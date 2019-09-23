@@ -1,6 +1,5 @@
 package com.cg.TestManagement.ui;
 
-import java.math.BigInteger;
 import java.time.DateTimeException;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -251,7 +250,7 @@ public class Application {
 	public static void addTest() {
 		System.out.println(INPUTUSERID);
 		try {
-			BigInteger userId_AddTest = scanner.nextBigInteger();
+			Long userId_AddTest = scanner.nextLong();
 
 			service.validateUserId(userId_AddTest);
 
@@ -292,14 +291,14 @@ public class Application {
 	public static void updateTest() {
 		System.out.println(INPUTUSERID);
 		try {
-			BigInteger userId_UpdateTest = scanner.nextBigInteger();
+			Long userId_UpdateTest = scanner.nextLong();
 			service.validateUserId(userId_UpdateTest);
 			User updateTestUser;
 			updateTestUser = service.searchUser(userId_UpdateTest);
 
 			if (updateTestUser != null && updateTestUser.getIsAdmin()) {
 				System.out.println("Enter the OnlineTest Id to be updated");
-				BigInteger updateTestId = scanner.nextBigInteger();
+				Long updateTestId = scanner.nextLong();
 
 				service.validateTestId(updateTestId);
 
@@ -326,14 +325,14 @@ public class Application {
 	public static void deleteTest() {
 		System.out.println(INPUTUSERID);
 		try {
-			BigInteger userId_DeleteTest = scanner.nextBigInteger();
+			Long userId_DeleteTest = scanner.nextLong();
 
 			service.validateUserId(userId_DeleteTest);
 
 			User deleteTestUser = service.searchUser(userId_DeleteTest);
 			if (deleteTestUser != null && deleteTestUser.getIsAdmin()) {
 				System.out.println("Enter the OnlineTest Id to be deleted");
-				BigInteger deleteTestId = scanner.nextBigInteger();
+				Long deleteTestId = scanner.nextLong();
 
 				service.validateTestId(deleteTestId);
 
@@ -364,16 +363,16 @@ public class Application {
 	public static void assignTestToUser() {
 		System.out.println(INPUTUSERID);
 		try {
-			BigInteger user_Id = scanner.nextBigInteger();
+			Long user_Id = scanner.nextLong();
 			service.validateUserId(user_Id);
 			User assignUser;
 			assignUser = service.searchUser(user_Id);
 			if (assignUser.getIsAdmin()) {
 				System.out.println("Enter the User Id to whom test is to be assigned");
-				BigInteger userTestId = scanner.nextBigInteger();
+				Long userTestId = scanner.nextLong();
 				service.validateUserId(userTestId);
 				System.out.println("Enter the OnlineTest Id of the test to be alloted");
-				BigInteger testUserId = scanner.nextBigInteger();
+				Long testUserId = scanner.nextLong();
 				service.validateTestId(testUserId);
 				Boolean assign;
 				OnlineTest test = service.searchTest(testUserId);
@@ -397,14 +396,14 @@ public class Application {
 	public static void addQuestion() {
 		System.out.println(INPUTUSERID);
 		try {
-			BigInteger userId_AddQuestion = scanner.nextBigInteger();
+			Long userId_AddQuestion = scanner.nextLong();
 
 			service.validateUserId(userId_AddQuestion);
 
 			User addQuestionUser = service.searchUser(userId_AddQuestion);
 			if (addQuestionUser != null && addQuestionUser.getIsAdmin()) {
 				System.out.println("Enter OnlineTest Id to which question is to be added");
-				BigInteger questionTestId = scanner.nextBigInteger();
+				Long questionTestId = scanner.nextLong();
 
 				service.validateTestId(questionTestId);
 
@@ -451,19 +450,19 @@ public class Application {
 	public static void updateQuestion() {
 		System.out.println(INPUTUSERID);
 		try {
-			BigInteger userId_UpdateQuestion = scanner.nextBigInteger();
+			Long userId_UpdateQuestion = scanner.nextLong();
 
 			service.validateUserId(userId_UpdateQuestion);
 
 			User updateQuestionUser = service.searchUser(userId_UpdateQuestion);
 			if (updateQuestionUser != null && updateQuestionUser.getIsAdmin()) {
 				System.out.println("Enter the OnlineTest Id to be updated");
-				BigInteger updateTestQuestionId = scanner.nextBigInteger();
+				Long updateTestQuestionId = scanner.nextLong();
 
 				service.validateTestId(updateTestQuestionId);
 
 				System.out.println("Enter Question Id to be updated");
-				BigInteger updateQuestionId = scanner.nextBigInteger();
+				Long updateQuestionId = scanner.nextLong();
 
 				service.validateQuestionId(updateQuestionId);
 
@@ -507,19 +506,19 @@ public class Application {
 	public static void deleteQuestion() {
 		System.out.println(INPUTUSERID);
 		try {
-			BigInteger userId_DeleteQuestion = scanner.nextBigInteger();
+			Long userId_DeleteQuestion = scanner.nextLong();
 
 			service.validateUserId(userId_DeleteQuestion);
 
 			User deleteQuestionUser = service.searchUser(userId_DeleteQuestion);
 			if (deleteQuestionUser != null && deleteQuestionUser.getIsAdmin()) {
 				System.out.println("Enter the OnlineTest Id from which Question is to be deleted");
-				BigInteger deleteTestQuestionId = scanner.nextBigInteger();
+				Long deleteTestQuestionId = scanner.nextLong();
 
 				service.validateTestId(deleteTestQuestionId);
 
 				System.out.println("Enter Question Id to be deleted");
-				BigInteger deleteQuestionId = scanner.nextBigInteger();
+				Long deleteQuestionId = scanner.nextLong();
 
 				service.validateQuestionId(deleteQuestionId);
 
@@ -570,7 +569,7 @@ public class Application {
 	public static void giveTest() {
 		System.out.println(INPUTUSERID);
 		try {
-			BigInteger userId_AnswerQuestion = scanner.nextBigInteger();
+			Long userId_AnswerQuestion = scanner.nextLong();
 
 			service.validateUserId(userId_AnswerQuestion);
 
@@ -580,7 +579,7 @@ public class Application {
 				for (Question question : questions) {
 					System.out.println(question.getQuestionTitle());
 					System.out.println(Arrays.toString(question.getQuestionOptions()));
-					BigInteger qid = question.getQuestionId();
+					Long qid = question.getQuestionId();
 					System.out.println("Choose Answer");
 					Integer answer = scanner.nextInt();
 
@@ -600,7 +599,7 @@ public class Application {
 	public static void checkResult() {
 		System.out.println("Enter OnlineTest Id for which the result is to be checked");
 		try {
-			BigInteger resultTestId = scanner.nextBigInteger();
+			Long resultTestId = scanner.nextLong();
 			service.validateTestId(resultTestId);
 
 			OnlineTest resultTest = service.searchTest(resultTestId);
@@ -619,7 +618,7 @@ public class Application {
 		User updateUser;
 		try {
 			System.out.println("Enter your User Id");
-			BigInteger id = scanner.nextBigInteger();
+			Long id = scanner.nextLong();
 
 			updateUser = service.searchUser(id);
 			System.out.println("Enter the updated username");

@@ -4,20 +4,19 @@ import com.cg.TestManagement.dto.Question;
 import com.cg.TestManagement.dto.User;
 import com.cg.TestManagement.exception.UserException;
 
-import java.math.BigInteger;
 
 public interface OnlineTestDao {
 	
 	public OnlineTest saveTest(OnlineTest onlineTest) throws UserException;
-	public OnlineTest searchTest(BigInteger testId) throws UserException;
-	public OnlineTest removeTest(BigInteger testId) throws UserException;
+	public OnlineTest searchTest(Long testId) throws UserException;
+	public OnlineTest removeTest(Long testId) throws UserException;
 	public Question saveQuestion(Question question) throws UserException;
-	public Question searchQuestion(BigInteger questId) throws UserException;
-	public Question removeQuestion(BigInteger questId) throws UserException;
+	public Question searchQuestion(Long questId) throws UserException;
+	public Question removeQuestion(Long questId) throws UserException;
 	public Question updateQuestion(Question question) throws UserException;
-	public User searchUser(BigInteger userId) throws UserException;
+	public User searchUser(Long userId) throws UserException;
 	public User saveUser(User user) throws UserException;	
-	public User removeUser(BigInteger userId) throws UserException;
+	public User removeUser(Long userId) throws UserException;
 	public User updateUser(User user) throws UserException;
 	OnlineTest updateTest(OnlineTest test) throws UserException;
 	
