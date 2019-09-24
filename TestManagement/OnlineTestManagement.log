@@ -915,3 +915,341 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'pro
 2019-09-23-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
 2019-09-23-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@72889280] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
 2019-09-23-main-INFO -org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-24-main-WARN -org.hibernate.jpa.boot.spi.ProviderChecker:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; [org.hibernate.jpa.HibernatePersistenceProvider] will be used instead.
+2019-09-24-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: OnlineTestManagement]
+2019-09-24-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {5.4.5.Final}
+2019-09-24-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-24-main-WARN -org.hibernate.orm.connections.pooling:HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001001: Connection properties: {user=root, password=****}
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001003: Autocommit mode: false
+2019-09-24-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-24-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@72889280] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-24-main-WARN -org.hibernate.jpa.boot.spi.ProviderChecker:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; [org.hibernate.jpa.HibernatePersistenceProvider] will be used instead.
+2019-09-24-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: OnlineTestManagement]
+2019-09-24-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {5.4.5.Final}
+2019-09-24-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-24-main-WARN -org.hibernate.orm.connections.pooling:HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001001: Connection properties: {user=root, password=****}
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001003: Autocommit mode: false
+2019-09-24-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-24-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@72889280] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-24-main-WARN -org.hibernate.jpa.boot.spi.ProviderChecker:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; [org.hibernate.jpa.HibernatePersistenceProvider] will be used instead.
+2019-09-24-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: OnlineTestManagement]
+2019-09-24-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {5.4.5.Final}
+2019-09-24-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-24-main-WARN -org.hibernate.orm.connections.pooling:HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001001: Connection properties: {user=root, password=****}
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001003: Autocommit mode: false
+2019-09-24-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-24-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55b62629] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1bdbf9be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-24-main-WARN -org.hibernate.jpa.boot.spi.ProviderChecker:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; [org.hibernate.jpa.HibernatePersistenceProvider] will be used instead.
+2019-09-24-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: OnlineTestManagement]
+2019-09-24-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {5.4.5.Final}
+2019-09-24-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-24-main-WARN -org.hibernate.orm.connections.pooling:HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001001: Connection properties: {user=root, password=****}
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001003: Autocommit mode: false
+2019-09-24-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-24-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55b62629] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1bdbf9be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-24-main-WARN -org.hibernate.jpa.boot.spi.ProviderChecker:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; [org.hibernate.jpa.HibernatePersistenceProvider] will be used instead.
+2019-09-24-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: OnlineTestManagement]
+2019-09-24-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {5.4.5.Final}
+2019-09-24-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-24-main-WARN -org.hibernate.orm.connections.pooling:HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001001: Connection properties: {user=root, password=****}
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001003: Autocommit mode: false
+2019-09-24-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-24-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55b62629] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1bdbf9be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-24-main-WARN -org.hibernate.jpa.boot.spi.ProviderChecker:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; [org.hibernate.jpa.HibernatePersistenceProvider] will be used instead.
+2019-09-24-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: OnlineTestManagement]
+2019-09-24-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {5.4.5.Final}
+2019-09-24-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-24-main-WARN -org.hibernate.orm.connections.pooling:HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001001: Connection properties: {user=root, password=****}
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001003: Autocommit mode: false
+2019-09-24-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-24-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-09-24-main-WARN -org.hibernate.jpa.boot.spi.ProviderChecker:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; [org.hibernate.jpa.HibernatePersistenceProvider] will be used instead.
+2019-09-24-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: OnlineTestManagement]
+2019-09-24-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {5.4.5.Final}
+2019-09-24-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-24-main-WARN -org.hibernate.orm.connections.pooling:HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001001: Connection properties: {user=root, password=****}
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001003: Autocommit mode: false
+2019-09-24-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-24-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55b62629] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-WARN -org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl:GenerationTarget encountered exception accepting command : Error executing DDL "alter table user drop foreign key FK9jvdmt6jcdfbxnchals2d9wrq" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user drop foreign key FK9jvdmt6jcdfbxnchals2d9wrq" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.TestManagement.dao.OnlineTestDaoImpl.<clinit>(OnlineTestDaoImpl.java:24)
+	at com.cg.TestManagement.service.ServiceImpl.<clinit>(ServiceImpl.java:22)
+	at com.cg.TestManagement.ui.Application.<clinit>(Application.java:35)
+Caused by: java.sql.SQLException: Error on rename of '.\project\user' to '.\project\#sql2-e90-a' (errno: 152)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:844)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:748)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2019-09-24-main-WARN -org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl:GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists test" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists test" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.TestManagement.dao.OnlineTestDaoImpl.<clinit>(OnlineTestDaoImpl.java:24)
+	at com.cg.TestManagement.service.ServiceImpl.<clinit>(ServiceImpl.java:22)
+	at com.cg.TestManagement.ui.Application.<clinit>(Application.java:35)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:844)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:748)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 17 more
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@15f193b8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-WARN -org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl:GenerationTarget encountered exception accepting command : Error executing DDL "create table test (test_id bigint not null auto_increment, test_end_time datetime, is_deleted bit, is_test_assigned bit, test_start_time datetime, test_duration time, test_marks_scored double precision, test_name varchar(255), test_total_marks double precision, primary key (test_id)) engine=InnoDB" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table test (test_id bigint not null auto_increment, test_end_time datetime, is_deleted bit, is_test_assigned bit, test_start_time datetime, test_duration time, test_marks_scored double precision, test_name varchar(255), test_total_marks double precision, primary key (test_id)) engine=InnoDB" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.TestManagement.dao.OnlineTestDaoImpl.<clinit>(OnlineTestDaoImpl.java:24)
+	at com.cg.TestManagement.service.ServiceImpl.<clinit>(ServiceImpl.java:22)
+	at com.cg.TestManagement.ui.Application.<clinit>(Application.java:35)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'test' already exists
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:844)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:748)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 17 more
+2019-09-24-main-WARN -org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl:GenerationTarget encountered exception accepting command : Error executing DDL "alter table question add constraint FK8hejcpbbiq1qje11346akp3uj foreign key (test_id) references test (test_id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table question add constraint FK8hejcpbbiq1qje11346akp3uj foreign key (test_id) references test (test_id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:374)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.TestManagement.dao.OnlineTestDaoImpl.<clinit>(OnlineTestDaoImpl.java:24)
+	at com.cg.TestManagement.service.ServiceImpl.<clinit>(ServiceImpl.java:22)
+	at com.cg.TestManagement.ui.Application.<clinit>(Application.java:35)
+Caused by: java.sql.SQLException: Can't create table 'project.#sql-e90_a' (errno: 150)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:844)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:748)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 17 more
+2019-09-24-main-WARN -org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl:GenerationTarget encountered exception accepting command : Error executing DDL "alter table user add constraint FK9jvdmt6jcdfbxnchals2d9wrq foreign key (userTest_test_id) references test (test_id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user add constraint FK9jvdmt6jcdfbxnchals2d9wrq foreign key (userTest_test_id) references test (test_id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:374)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.TestManagement.dao.OnlineTestDaoImpl.<clinit>(OnlineTestDaoImpl.java:24)
+	at com.cg.TestManagement.service.ServiceImpl.<clinit>(ServiceImpl.java:22)
+	at com.cg.TestManagement.ui.Application.<clinit>(Application.java:35)
+Caused by: java.sql.SQLException: Can't create table 'project.#sql-e90_a' (errno: 150)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:844)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:748)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 17 more
+2019-09-24-main-INFO -org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-09-24-main-WARN -org.hibernate.jpa.boot.spi.ProviderChecker:HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; [org.hibernate.jpa.HibernatePersistenceProvider] will be used instead.
+2019-09-24-main-INFO -org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: OnlineTestManagement]
+2019-09-24-main-INFO -org.hibernate.Version:HHH000412: Hibernate Core {5.4.5.Final}
+2019-09-24-main-INFO -org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-09-24-main-WARN -org.hibernate.orm.connections.pooling:HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/project]
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001001: Connection properties: {user=root, password=****}
+2019-09-24-main-INFO -org.hibernate.orm.connections.pooling:HHH10001003: Autocommit mode: false
+2019-09-24-main-INFO -org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl:HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-09-24-main-INFO -org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@55b62629] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-WARN -org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl:GenerationTarget encountered exception accepting command : Error executing DDL "alter table question drop foreign key FK8hejcpbbiq1qje11346akp3uj" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table question drop foreign key FK8hejcpbbiq1qje11346akp3uj" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.TestManagement.dao.OnlineTestDaoImpl.<clinit>(OnlineTestDaoImpl.java:24)
+	at com.cg.TestManagement.service.ServiceImpl.<clinit>(ServiceImpl.java:22)
+	at com.cg.TestManagement.ui.Application.<clinit>(Application.java:35)
+Caused by: java.sql.SQLException: Error on rename of '.\project\question' to '.\project\#sql2-e90-b' (errno: 152)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:844)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:748)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2019-09-24-main-WARN -org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl:GenerationTarget encountered exception accepting command : Error executing DDL "alter table user drop foreign key FK9jvdmt6jcdfbxnchals2d9wrq" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user drop foreign key FK9jvdmt6jcdfbxnchals2d9wrq" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.TestManagement.dao.OnlineTestDaoImpl.<clinit>(OnlineTestDaoImpl.java:24)
+	at com.cg.TestManagement.service.ServiceImpl.<clinit>(ServiceImpl.java:22)
+	at com.cg.TestManagement.ui.Application.<clinit>(Application.java:35)
+Caused by: java.sql.SQLException: Error on rename of '.\project\user' to '.\project\#sql2-e90-b' (errno: 152)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2541)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2499)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:844)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:748)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2019-09-24-main-INFO -org.hibernate.orm.connections.access:HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b69d40d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-09-24-main-INFO -org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]

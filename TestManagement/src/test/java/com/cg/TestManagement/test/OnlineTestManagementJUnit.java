@@ -2,7 +2,6 @@ package com.cg.TestManagement.test;
 
 import org.junit.jupiter.api.Assertions;
 
-import java.math.BigInteger;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
@@ -31,26 +30,26 @@ class OnlineTestManagementJUnit {
 
 	@Test
 	void assignTestUnitTest() throws UserException{		
-		Assertions.assertEquals(new Boolean(true), service.assignTest(BigInteger.valueOf(7), BigInteger.valueOf(10)));
-		Assertions.assertThrows(UserException.class, ()->{service.assignTest(BigInteger.valueOf(3), BigInteger.valueOf(2));});
+		Assertions.assertEquals(new Boolean(true), service.assignTest(Long.valueOf(7), Long.valueOf(10)));
+		Assertions.assertThrows(UserException.class, ()->{service.assignTest(Long.valueOf(3), Long.valueOf(2));});
 	}
 
 	@Test
 	void searchUserUnitTest() throws UserException {
-		Assertions.assertEquals("Swanand", service.searchUser(BigInteger.valueOf(1)).getUserName());
-		Assertions.assertThrows(UserException.class, ()->{service.searchUser(BigInteger.valueOf(100));});
+		Assertions.assertEquals("Swanand", service.searchUser(Long.valueOf(1)).getUserName());
+		Assertions.assertThrows(UserException.class, ()->{service.searchUser(Long.valueOf(100));});
 	}
 
 	@Test
 	void searchTestUnitTest() throws UserException {
-		Assertions.assertEquals("opopop", service.searchTest(BigInteger.valueOf(2)).getTestName());
-		Assertions.assertThrows(UserException.class, ()->{service.searchTest(BigInteger.valueOf(101));});
+		Assertions.assertEquals("opopop", service.searchTest(Long.valueOf(2)).getTestName());
+		Assertions.assertThrows(UserException.class, ()->{service.searchTest(Long.valueOf(101));});
 	}
 	
 	@Test
 	void chosenAnswerUnitTest() throws UserException {
-		OnlineTest test = service.searchTest(BigInteger.valueOf(1));
-		Question question = service.showQuestion(test, BigInteger.valueOf(101));
+		OnlineTest test = service.searchTest(Long.valueOf(1));
+		Question question = service.showQuestion(test, Long.valueOf(101));
 		Assertions.assertTrue(question.getChosenAnswer()>=0 && question.getChosenAnswer()<=3);
 		Assertions.assertFalse(question.getChosenAnswer()>=4);
 	}
@@ -64,10 +63,10 @@ class OnlineTestManagementJUnit {
 	
 	@Test
 	void answerQuestionUnitTest() throws UserException {
-		OnlineTest test = service.searchTest(BigInteger.valueOf(2));
-		Question question = service.showQuestion(test, BigInteger.valueOf(102));
+		OnlineTest test = service.searchTest(Long.valueOf(2));
+		Question question = service.showQuestion(test, Long.valueOf(102));
 		Assertions.assertEquals(new Boolean(true), service.answerQuestion(test, question, 1));
-		Assertions.assertThrows(UserException.class, ()->{service.answerQuestion(service.searchTest(BigInteger.valueOf(10)), question, 2);});
+		Assertions.assertThrows(UserException.class, ()->{service.answerQuestion(service.searchTest(Long.valueOf(10)), question, 2);});
 	}
 	
 	@Test

@@ -3,6 +3,7 @@ package com.cg.TestManagement.dto;
 import java.math.BigInteger;
 import java.util.Arrays;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,14 +16,22 @@ import javax.persistence.Table;
 @Table(name = "question")
 public class Question {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "question_id")
 	private Long questionId;
+	@Column(name = "question_options")
 	private String[] questionOptions;
+	@Column(name = "question_title")
 	private String questionTitle;
+	@Column(name = "question_correct_answer")
 	private Integer questionAnswer;
+	@Column(name = "question_marks")
 	private Double questionMarks;
+	@Column(name = "question_chosen_answer")
 	private Integer chosenAnswer;
+	@Column(name = "question_marks_scored")
 	private Double marksScored;
+	@Column(name = "is_deleted")
 	private Boolean isDeleted;
 
 	@ManyToOne

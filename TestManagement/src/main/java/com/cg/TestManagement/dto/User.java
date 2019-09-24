@@ -1,5 +1,6 @@
 package com.cg.TestManagement.dto;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,13 +12,18 @@ import javax.persistence.Table;
 @Table(name = "user")
 public class User {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "user_id")
 	private Long userId;
+	@Column(name = "user_name")
 	private String userName;
+	@Column(name = "user_password")
 	private String userPassword;
 	@OneToOne
 	private OnlineTest userTest;
+	@Column(name = "is_admin")
 	private Boolean isAdmin;
+	@Column(name = "is_deleted")
 	private Boolean isDeleted;
 
 	public User() {

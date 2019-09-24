@@ -5,6 +5,7 @@ import java.time.LocalTime;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,18 +17,27 @@ import javax.persistence.Table;
 @Table(name = "test")
 public class OnlineTest {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "test_id")
 	private Long testId;
+	@Column(name = "test_name")
 	private String testName;
+	@Column(name = "test_duration")
 	private LocalTime testDuration;
 	
 	@OneToMany(mappedBy = "onlinetest", cascade=CascadeType.ALL)
 	private Set<Question> testQuestions;
+	@Column(name = "test_total_marks")
 	private Double testTotalMarks;
+	@Column(name = "test_marks_scored")
 	private Double testMarksScored;
+	@Column(name = "test_start_time")
 	private LocalDateTime startTime;
+	@Column(name = "test_end_time")
 	private LocalDateTime endTime;
+	@Column(name = "is_test_assigned")
 	private Boolean isTestAssigned;
+	@Column(name = "is_deleted")
 	private Boolean isDeleted;
 
 	public OnlineTest() {

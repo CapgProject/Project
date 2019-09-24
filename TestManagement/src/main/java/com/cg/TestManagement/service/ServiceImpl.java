@@ -25,7 +25,7 @@ public class ServiceImpl implements Service {
 	@Override
 	public User registerUser(User user) throws UserException {
 		User returnedUser;
-		if (!((returnedUser = onlineTestDao.saveUser(user)) != null))
+		if ((returnedUser = onlineTestDao.saveUser(user)) != null)
 			return returnedUser;
 		else {
 			throw new UserException(ExceptionMessage.DATABASEMESSAGE);
@@ -167,10 +167,10 @@ public class ServiceImpl implements Service {
 
 	@Override
 	public Double getResult(OnlineTest onlineTest) throws UserException {
-		calculateTotalMarks(onlineTest);
+		Double score = calculateTotalMarks(onlineTest);
 		onlineTest.setIsTestAssigned(false);
 		onlineTestDao.updateTest(onlineTest);
-		return onlineTest.getTestMarksScored();
+		return score;
 	}
 
 	@Override
@@ -284,13 +284,11 @@ public class ServiceImpl implements Service {
 
 	@Override
 	public List<User> getUsers() {
-		// TODO Auto-generated method stub
 		return onlineTestDao.getUsers();
 	}
 
 	@Override
 	public List<OnlineTest> getTests() {
-		// TODO Auto-generated method stub
 		return onlineTestDao.getTests();
 	}
 

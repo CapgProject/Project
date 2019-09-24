@@ -140,7 +140,7 @@ public class Application {
 				System.out.println(ExceptionMessage.INVALIDINPUTMESSAGE);
 				scanner.nextLine();
 			}
-		} while (adminChoice != 4);
+		} while (adminChoice != 6);
 	}
 
 	public static void displayAdminTestActions(int testChoice) {
