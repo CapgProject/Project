@@ -7,7 +7,6 @@ import java.util.Set;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import org.apache.log4j.Logger;
@@ -18,15 +17,22 @@ import com.cg.TestManagement.dto.OnlineTest;
 import com.cg.TestManagement.dto.User;
 import com.cg.TestManagement.exception.ExceptionMessage;
 import com.cg.TestManagement.exception.UserException;
+import com.cg.TestManagement.util.EntityManagerUtil;
 
 public class OnlineTestDaoImpl implements OnlineTestDao {
 
-	private static EntityManagerFactory entityFactory = Persistence.createEntityManagerFactory("OnlineTestManagement");
-	private static EntityManager entitymanager = entityFactory.createEntityManager();
-//	private PreparedStatement preparedStatement;
-//	private ResultSet resultSet;
+	private static EntityManagerUtil emutil = new EntityManagerUtil();
+	private static EntityManagerFactory entityFactory;
+	private static EntityManager entitymanager;
+	@SuppressWarnings("unused")
 	private static Logger myLogger;
 
+	static {
+		emutil.initializeEntity();
+		entityFactory = emutil.getEntiManagerFactory();
+		entitymanager = entityFactory.createEntityManager();
+	}
+	
 	static {
 
 		Properties props = System.getProperties();
@@ -34,16 +40,6 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 		PropertyConfigurator.configure(userDir + "log4j.properties");
 		myLogger = Logger.getLogger("OnlineTestDaoImpl.class");
 	}
-
-//	public void closePreparedStatement() {
-//		if (preparedStatement != null) {
-//			try {
-//				preparedStatement.close();
-//			} catch (SQLException e) {
-//				myLogger.error(e);
-//			}
-//		}
-//	}
 	
 	public Set<Question> getQuestionSet(Long testId) throws UserException {
 		EntityTransaction transaction = entitymanager.getTransaction();
@@ -68,7 +64,6 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 
 	@Override
 	public OnlineTest searchTest(Long testId) throws UserException {
-		EntityTransaction transaction = entitymanager.getTransaction();
 		OnlineTest test = entitymanager.find(OnlineTest.class, testId);
 		if(test != null) {
 			return test;
@@ -135,7 +130,6 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 
 	@Override
 	public Question searchQuestion(Long questId) throws UserException {
-		EntityTransaction transaction = entitymanager.getTransaction();
 		Question question = entitymanager.find(Question.class, questId);
 		if(question != null) {
 			return question;
@@ -249,6 +243,7 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 		EntityTransaction transaction = entitymanager.getTransaction();
 		transaction.begin();
 		Query query = entitymanager.createQuery("FROM User WHERE isAdmin=0");
+		@SuppressWarnings("unchecked")
 		List<User> userList = query.getResultList();
 		transaction.commit();
 		return userList;
@@ -256,10 +251,10 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 
 	@Override
 	public List<OnlineTest> getTests() {
-		// TODO Auto-generated method stub
 		EntityTransaction transaction = entitymanager.getTransaction();
 		transaction.begin();
 		Query query = entitymanager.createQuery("FROM OnlineTest WHERE isDeleted IS NULL");
+		@SuppressWarnings("unchecked")
 		List<OnlineTest> testList = query.getResultList();
 		transaction.commit();
 		return testList;
