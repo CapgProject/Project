@@ -242,7 +242,7 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 		// TODO Auto-generated method stub
 		EntityTransaction transaction = entitymanager.getTransaction();
 		transaction.begin();
-		Query query = entitymanager.createQuery("FROM User WHERE isAdmin=0");
+		Query query = entitymanager.createQuery("FROM User WHERE isAdmin=0 AND isDeleted IS NULL");
 		@SuppressWarnings("unchecked")
 		List<User> userList = query.getResultList();
 		transaction.commit();
@@ -253,7 +253,7 @@ public class OnlineTestDaoImpl implements OnlineTestDao {
 	public List<OnlineTest> getTests() {
 		EntityTransaction transaction = entitymanager.getTransaction();
 		transaction.begin();
-		Query query = entitymanager.createQuery("FROM OnlineTest WHERE isDeleted IS NULL");
+		Query query = entitymanager.createQuery("FROM OnlineTest WHERE isDeleted IS NULL AND isTestAssigned IS NULL");
 		@SuppressWarnings("unchecked")
 		List<OnlineTest> testList = query.getResultList();
 		transaction.commit();

@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -20,6 +21,7 @@ public class User {
 	@Column(name = "user_password")
 	private String userPassword;
 	@OneToOne
+	@JoinColumn(name="test_id")
 	private OnlineTest userTest;
 	@Column(name = "is_admin")
 	private Boolean isAdmin;
